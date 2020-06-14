@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Drawble</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Drawble</h1>
+    <div id="wordSelection">
+        <h3>Select a word:</h3>
+        <button onclick="selectWord('pumpkin')">pumpkin</button>
+        <button onclick="selectWord('swimming pool')">swimming pool</button>
+        <button onclick="selectWord('medal')">medal</button>
+    </div>
+
+    <div>
+        <h2>you are drawing...</h2>
+        <h3 id="theWord"></h3>
+    </div>
+
+    <div>
+        <div id="canvas-placeholder">
+            <canvas id="canvas">
+                "Your browser is trash, or you haven't enabled javascript" ~ Jess Dam
+            </canvas>
+        </div>
+        <br />
+        <div id= "canvas-controls" class='text-center'>
+            <button id="erase">eraser</button>
+            <button id="pen">pen</button>
+            <button id="restart">restart</button>
+        </div>
+    </div>
+
+    <script src="playerOne.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
